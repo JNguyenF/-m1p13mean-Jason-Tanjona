@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { Header } from "./layout/header/header";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header],
+  imports: [RouterOutlet, Header, MatSnackBarModule],
   template: `
-    <app-header/>
-    <div class="h-[calc(100%-64px)] overflow">
+    <app-header class="z-10"/>
+    <div class="h-[calc(100%-64px)] overflow-auto">
     <router-outlet />
     </div>
   `,

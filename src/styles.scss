@@ -2,6 +2,7 @@
 @use 'tailwindcss';
 
 
+
 html {
   @include mat.theme(
     (
@@ -158,7 +159,7 @@ mat-sidenav {
       active-indicator-color: var(--mat-sys-primary),
       active-indicator-shape: 6px,
       list-item-one-line-container-height: 40px,
-      list-item-label-text-color: red,
+      
     )
   );
 }
@@ -174,3 +175,4 @@ mat-sidenav {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 1rem;
 }
+
